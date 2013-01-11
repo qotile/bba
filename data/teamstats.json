@@ -1,0 +1,20 @@
+{
+	data : [
+		{
+			"Player" : "Larry Bird",
+			"NBATeam" : "Boston",
+			"Position" : "F",
+			"Salary" : "3888888",
+			"GamesPlayed" : "20", 
+			"FantasyPoints" : "778"
+		},
+		{
+			"Player" : "Oscar Robertson",
+			"NBATeam" : "Milwaukee",
+			"Position" : "G-F",
+			"Salary" : "3888888",
+			"GamesPlayed" : "20", 
+			"FantasyPoints" : "778"
+		}
+	]
+}

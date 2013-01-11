@@ -1,0 +1,204 @@
+{
+	data : [
+		{
+			"currGame" : "42",
+			"game" : [
+				{
+					"gameNumber" : "41",
+					"matchup" : [
+						{
+							"homeTeam" : "Goodfellas",
+							"homeWins" : "20"
+							"homeLosses" : "22",
+							"homePlayersDone" : "12"
+							"awayTeam" : "The Qotile"
+							"awayWins" : "22",
+							"awayLosses" : "20",
+							"awayPlayersDone" : "12"
+						},
+						{
+							"homeTeam" : "Goodfellas",
+							"homeWins" : "20"
+							"homeLosses" : "22",
+							"homePlayersDone" : "12"
+							"awayTeam" : "The Qotile"
+							"awayWins" : "22",
+							"awayLosses" : "20",
+							"awayPlayersDone" : "12"
+						},
+						{
+							"homeTeam" : "Goodfellas",
+							"homeWins" : "20"
+							"homeLosses" : "22",
+							"homePlayersDone" : "12"
+							"awayTeam" : "The Qotile"
+							"awayWins" : "22",
+							"awayLosses" : "20",
+							"awayPlayersDone" : "12"
+						},
+						{
+							"homeTeam" : "Goodfellas",
+							"homeWins" : "20"
+							"homeLosses" : "22",
+							"homePlayersDone" : "12"
+							"awayTeam" : "The Qotile"
+							"awayWins" : "22",
+							"awayLosses" : "20",
+							"awayPlayersDone" : "12"
+						},
+						{
+							"homeTeam" : "Goodfellas",
+							"homeWins" : "20"
+							"homeLosses" : "22",
+							"homePlayersDone" : "12"
+							"awayTeam" : "The Qotile"
+							"awayWins" : "22",
+							"awayLosses" : "20",
+							"awayPlayersDone" : "12"
+						},
+						{
+							"homeTeam" : "Goodfellas",
+							"homeWins" : "20"
+							"homeLosses" : "22",
+							"homePlayersDone" : "12"
+							"awayTeam" : "The Qotile"
+							"awayWins" : "22",
+							"awayLosses" : "20",
+							"awayPlayersDone" : "12"
+						},
+					]
+				},
+				{
+					"gameNumber" : "42",
+					"matchup" : [
+						{
+							"homeTeam" : "Goodfellas",
+							"homeWins" : "20"
+							"homeLosses" : "22",
+							"homePlayersDone" : "12"
+							"awayTeam" : "The Qotile"
+							"awayWins" : "22",
+							"awayLosses" : "20",
+							"awayPlayersDone" : "12"
+						},
+						{
+							"homeTeam" : "Goodfellas",
+							"homeWins" : "20"
+							"homeLosses" : "22",
+							"homePlayersDone" : "12"
+							"awayTeam" : "The Qotile"
+							"awayWins" : "22",
+							"awayLosses" : "20",
+							"awayPlayersDone" : "12"
+						},
+						{
+							"homeTeam" : "Goodfellas",
+							"homeWins" : "20"
+							"homeLosses" : "22",
+							"homePlayersDone" : "11"
+							"awayTeam" : "The Qotile"
+							"awayWins" : "22",
+							"awayLosses" : "20",
+							"awayPlayersDone" : "9"
+						},
+						{
+							"homeTeam" : "Goodfellas",
+							"homeWins" : "20"
+							"homeLosses" : "22",
+							"homePlayersDone" : "12"
+							"awayTeam" : "The Qotile"
+							"awayWins" : "22",
+							"awayLosses" : "20",
+							"awayPlayersDone" : "12"
+						},
+						{
+							"homeTeam" : "Goodfellas",
+							"homeWins" : "20"
+							"homeLosses" : "22",
+							"homePlayersDone" : "12"
+							"awayTeam" : "The Qotile"
+							"awayWins" : "22",
+							"awayLosses" : "20",
+							"awayPlayersDone" : "12"
+						},
+						{
+							"homeTeam" : "Goodfellas",
+							"homeWins" : "20"
+							"homeLosses" : "22",
+							"homePlayersDone" : "12"
+							"awayTeam" : "The Qotile"
+							"awayWins" : "22",
+							"awayLosses" : "20",
+							"awayPlayersDone" : "12"
+						},
+					]
+				},
+				{
+					"gameNumber" : "43",
+					"matchup" : [
+						{
+							"homeTeam" : "Goodfellas",
+							"homeWins" : "20"
+							"homeLosses" : "22",
+							"homePlayersDone" : "8"
+							"awayTeam" : "The Qotile"
+							"awayWins" : "22",
+							"awayLosses" : "20",
+							"awayPlayersDone" : "7"
+						},
+						{
+							"homeTeam" : "Goodfellas",
+							"homeWins" : "20"
+							"homeLosses" : "22",
+							"homePlayersDone" : "10"
+							"awayTeam" : "The Qotile"
+							"awayWins" : "22",
+							"awayLosses" : "20",
+							"awayPlayersDone" : "7"
+						},
+						{
+							"homeTeam" : "Goodfellas",
+							"homeWins" : "20"
+							"homeLosses" : "22",
+							"homePlayersDone" : "12"
+							"awayTeam" : "The Qotile"
+							"awayWins" : "22",
+							"awayLosses" : "20",
+							"awayPlayersDone" : "12"
+						},
+						{
+							"homeTeam" : "Goodfellas",
+							"homeWins" : "20"
+							"homeLosses" : "22",
+							"homePlayersDone" : "12"
+							"awayTeam" : "The Qotile"
+							"awayWins" : "22",
+							"awayLosses" : "20",
+							"awayPlayersDone" : "12"
+						},
+						{
+							"homeTeam" : "Goodfellas",
+							"homeWins" : "20"
+							"homeLosses" : "22",
+							"homePlayersDone" : "12"
+							"awayTeam" : "The Qotile"
+							"awayWins" : "22",
+							"awayLosses" : "20",
+							"awayPlayersDone" : "12"
+						},
+						{
+							"homeTeam" : "Goodfellas",
+							"homeWins" : "20"
+							"homeLosses" : "22",
+							"homePlayersDone" : "12"
+							"awayTeam" : "The Qotile"
+							"awayWins" : "22",
+							"awayLosses" : "20",
+							"awayPlayersDone" : "12"
+						}
+					]
+				}
+			]
+		}
+	]
+}

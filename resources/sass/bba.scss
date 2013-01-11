@@ -1,0 +1,44 @@
+@import 'compass';
+@import 'ext4/default/all';
+
+$highlight-background-color: #7b8b9d;
+$header-background-color: darken($highlight-background-color, 30);
+$review-background-color: lighten($highlight-background-color, 20);
+
+/**
+ * Application header
+ */
+.app-header {
+    padding: 10px;
+    
+    @include background-gradient($header-background-color, 'matte');
+    
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 0 1px 0 darken($header-background-color, 15);
+    
+    border-bottom: 1px solid darken($header-background-color, 15) !important;
+}
+
+//for browsers that dont support linear gradients
+.x-nlg {
+    .app-header {
+        background: url(../images/legacy/header-bg.png) repeat-x;
+    }
+}
+
+//for browsers that dont support linear gradients
+.x-nlg {
+    .sidebar-list {
+        .x-item-selected {
+            background: url(../images/legacy/sidebar-selected-bg.png) repeat-x;
+        }
+    }
+}
+
+.team-tab-panel {
+	margin: 10px;
+	padding: 10px;
+}
