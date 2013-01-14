@@ -14,8 +14,10 @@ var navigate = function(panel, direction){
 Ext.define('bba.view.ScorePanel', {
     extend: 'Ext.panel.Panel',
 	alias: 'widget.scorepanel',
-	store: 'ScoreDataStore',
-	title: 'Game ' + record.get('CurrGame'),
+	
+	requires: [
+		'bba.view.ScoreBox'
+	],
 
     height: 220,
     width: 900,
@@ -25,7 +27,7 @@ Ext.define('bba.view.ScorePanel', {
 		{ 
             id: 'move-prev',
 			xtype: 'button', 
-			icon: '../../resources/images/shared/left-btn.gif',
+			icon: 'resources/images/shared/left-btn.gif',
             handler: function(btn) {
                 navigate(btn.up("panel"), "prev");
             }
@@ -36,16 +38,27 @@ Ext.define('bba.view.ScorePanel', {
 		{ 
             id: 'move-next',
 			xtype: 'button', 
-			icon: '../../resources/images/shared/right-btn.gif',
+			icon: 'resources/images/shared/right-btn.gif',
             handler: function(btn) {
                 navigate(btn.up("panel"), "next");
             }
 		}
 	],
 	
-    items: [{
-		xtype: 'scorebox',
-		game: record.get('CurrGame'),
-		flex: 1
-	}]
+    initComponent: function() {
+        var me = this;
+
+        Ext.applyIf(me, {
+			title: 'Game ' + Ext.getStore('ScoreDataStore').first().get('currGame'),
+            items: [
+                {
+					xtype: 'scorebox',
+					game: Ext.getStore('ScoreDataStore').first().get('currGame'),
+					flex: 1
+				}
+            ]
+        });
+
+        me.callParent(arguments);
+    }
 });

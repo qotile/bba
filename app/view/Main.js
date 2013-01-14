@@ -3,7 +3,8 @@ Ext.define('bba.view.Main', {
 
     requires: [
         'bba.view.Header',
-        'bba.view.TeamTabPanel'
+        'bba.view.TeamTabPanel',
+		'bba.view.ScorePanel'
     ],
 
     initComponent: function() {
@@ -16,6 +17,10 @@ Ext.define('bba.view.Main', {
 					html: 'BBA',
 					flex: 1,
 					dock: 'top'
+				},
+				{
+					xtype: 'scorepanel',
+					flex: 1
 				},
 				{
 					xtype: 'teamtabpanel',

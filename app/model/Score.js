@@ -7,7 +7,7 @@ Ext.define('bba.model.Score', {
         }
     ],
 	hasMany: {
-		model: 'Game',
+		model: 'bba.model.Game',
 		name: 'game'
 	}
 });
@@ -20,9 +20,10 @@ Ext.define('bba.model.Game', {
             name: 'gameNumber'
         }
     ],
+	idProperty: 'gameNumber',
 	belongsTo: 'Score',
 	hasMany: {
-		model: 'Matchup',
+		model: 'bba.model.Matchup',
 		name: 'matchup'
 	}
 });
@@ -56,6 +57,7 @@ Ext.define('bba.model.Matchup', {
             name: 'awayPlayersDone',
         }
     ],
+	idProperty: 'homeTeam',
 	belongsTo: 'Game'
 });
 

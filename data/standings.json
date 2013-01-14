@@ -1,16 +1,16 @@
 {
-	data : [
+	"data" : [
 		{
 			"Team" : "The Qotile",
 			"Wins" : "22",
 			"Losses" : "20",
-			"FantasyPoints" : "17778"
+			"FantasyPoints" : "12778"
 		},
 		{
 			"Team" : "Goodfellas",
 			"Wins" : "20",
 			"Losses" : "22",
-			"FantasyPoints" : "17777"
+			"FantasyPoints" : "12777"
 		}
 	]
 }

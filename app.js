@@ -1,19 +1,23 @@
 Ext.Loader.setConfig({
-    enabled: true
+    enabled: true,
+	disableCaching: false
 });
 
 Ext.application({
     models: [
-        'TeamStatData',
-		'StandingsData'
+        'TeamStat',
+		'Standings',
+		'Score'
     ],
     stores: [
         'TeamStatDataStore',
-		'StandingsDataStore'
+		'StandingsDataStore',
+		'ScoreDataStore'
     ],
     views: [
 		'Header',
-        'TeamTabPanel'
+        'TeamTabPanel',
+		'ScorePanel'
     ],
     autoCreateViewport: true,
     name: 'bba'

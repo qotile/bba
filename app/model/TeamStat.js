@@ -1,4 +1,4 @@
-Ext.define('bba.model.TeamStatData', {
+Ext.define('bba.model.TeamStat', {
     extend: 'Ext.data.Model',
 
     fields: [
