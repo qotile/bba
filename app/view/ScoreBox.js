@@ -1,5 +1,5 @@
 Ext.define('bba.view.ScoreBox', {
-    override: 'Ext.panel.Panel',
+    extend: 'Ext.panel.Panel',
 	alias: 'widget.scorebox',
 	game: '',
 	
@@ -11,42 +11,23 @@ Ext.define('bba.view.ScoreBox', {
     width: 880,
     layout: 'hbox',
 	
-    constructor: function(config) {
-        var me = this;
-
-        config = config || {};
-        if (config.initialConfig) {
-
-            // Being initialized from an Ext.Action instance...
-            if (config.isAction) {
-                me.baseAction = config;
-            }
-            config = config.initialConfig;
-            // component cloning / action set up
-        }
-        else if (config.tagName || config.dom || Ext.isString(config)) {
-            // element object
-            config = {
-                applyTo: config,
-                id: config.id || config
-            };
-        }
-
-        me.callParent([config]);
-    },
-	
 	initComponent: function() {
         var me = this;
 
-		Ext.each(Ext.getStore('ScoreDataStore').first().getAssociatedData(), function(gameRecord, index, gamesItSelf) {
+		Ext.each(Ext.getStore('ScoreDataStore').first().getAssociatedData().game, function(gameRecord, index, gamesItSelf) {
 			if (gameRecord.gameNumber == me.game) {
-				var flx = 1;
+				var flx = 0;
+				var matchups = [];
 				Ext.each(gameRecord.matchup, function(matchupRecord, index, matchupItSelf) {
-					add({xtype: matchuppanel, 
-						game: gameRecord.gameNumber, 
-						matchup: matchupRecord.homeTeam, 
-						flex: flx});
-					flx++;
+					matchups[flx] = {xtype: 'matchuppanel',
+						game: gameRecord.gameNumber,
+						matchup: matchupRecord.homeTeam,
+						flex: flx+1};
+					flx=flx+1;
+				});
+				
+				Ext.applyIf(me, {
+					items: matchups
 				});
 			}
 		});

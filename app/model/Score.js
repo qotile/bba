@@ -20,7 +20,6 @@ Ext.define('bba.model.Game', {
             name: 'gameNumber'
         }
     ],
-	idProperty: 'gameNumber',
 	belongsTo: 'Score',
 	hasMany: {
 		model: 'bba.model.Matchup',
@@ -42,6 +41,9 @@ Ext.define('bba.model.Matchup', {
             name: 'homeLosses',
         },
         {
+            name: 'homeScore',
+        },
+        {
             name: 'homePlayersDone',
         },
         {
@@ -54,10 +56,12 @@ Ext.define('bba.model.Matchup', {
             name: 'awayLosses',
         },
         {
+            name: 'awayScore',
+        },
+        {
             name: 'awayPlayersDone',
         }
     ],
-	idProperty: 'homeTeam',
 	belongsTo: 'Game'
 });
 
