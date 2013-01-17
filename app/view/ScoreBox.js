@@ -7,13 +7,17 @@ Ext.define('bba.view.ScoreBox', {
 		'bba.view.MatchupPanel'
 	],
 
-    height: 220,
-    width: 880,
-    layout: 'hbox',
+    height: 70,
+    width: 980,
+    layout: 'column',
 	
 	initComponent: function() {
         var me = this;
 
+        Ext.applyIf(me, {
+			title: 'Game ' + me.game
+		});
+		
 		Ext.each(Ext.getStore('ScoreDataStore').first().getAssociatedData().game, function(gameRecord, index, gamesItSelf) {
 			if (gameRecord.gameNumber == me.game) {
 				var flx = 0;

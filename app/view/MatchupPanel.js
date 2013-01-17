@@ -3,6 +3,8 @@ Ext.define('bba.view.MatchupPanel', {
 	alias: 'widget.matchuppanel',
 	game: '',
 	matchup:'',
+    width: 157,
+	cls: 'matchup',
 	
 	initComponent: function() {
         var me = this;
@@ -14,10 +16,12 @@ Ext.define('bba.view.MatchupPanel', {
 						Ext.applyIf(me, {
 							html: '<p>' + matchupRecord.awayTeam + 
 								' (' + matchupRecord.awayWins + '-' + matchupRecord.awayLosses + ') ' + 
-								matchupRecord.awayScore + ' (' + matchupRecord.awayPlayersDone + ')</p><p>' +
-								matchupRecord.homeTeam + 
+								matchupRecord.awayScore + ' (' + 
+								(matchupRecord.awayPlayersDone == 12 ? 'F' : matchupRecord.awayPlayersDone) + 
+								')</p><p>' + matchupRecord.homeTeam + 
 								' (' + matchupRecord.homeWins + '-' + matchupRecord.homeLosses + ') ' + 
-								matchupRecord.homeScore + ' (' + matchupRecord.homePlayersDone + ')</p>'
+								matchupRecord.homeScore + ' (' + 
+								(matchupRecord.homePlayersDone == 12 ? 'F' : matchupRecord.homePlayersDone) + ')</p>'
 						});
 					}
 				});

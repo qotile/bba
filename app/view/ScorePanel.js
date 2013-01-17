@@ -19,8 +19,8 @@ Ext.define('bba.view.ScorePanel', {
 		'bba.view.ScoreBox'
 	],
 
-    height: 220,
-    width: 900,
+    height: 70,
+    width: 1000,
     layout: 'card',
 	
 	lbar: [
@@ -49,7 +49,6 @@ Ext.define('bba.view.ScorePanel', {
         var me = this;
 
         Ext.applyIf(me, {
-			title: 'Game ' + Ext.getStore('ScoreDataStore').first().get('currGame'),
             items: [
                 {
 					xtype: 'scorebox',

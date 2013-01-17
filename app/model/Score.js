@@ -32,34 +32,34 @@ Ext.define('bba.model.Matchup', {
 
     fields: [
         {
-            name: 'homeTeam',
+            name: 'homeTeam'
         },
         {
-            name: 'homeWins',
+            name: 'homeWins'
         },
         {
-            name: 'homeLosses',
+            name: 'homeLosses'
         },
         {
-            name: 'homeScore',
+            name: 'homeScore'
         },
         {
-            name: 'homePlayersDone',
+            name: 'homePlayersDone'
         },
         {
-            name: 'awayTeam',
+            name: 'awayTeam'
         },
         {
-            name: 'awayWins',
+            name: 'awayWins'
         },
         {
-            name: 'awayLosses',
+            name: 'awayLosses'
         },
         {
-            name: 'awayScore',
+            name: 'awayScore'
         },
         {
-            name: 'awayPlayersDone',
+            name: 'awayPlayersDone'
         }
     ],
 	belongsTo: 'Game'
