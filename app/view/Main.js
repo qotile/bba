@@ -3,28 +3,29 @@ Ext.define('bba.view.Main', {
 
     requires: [
         'bba.view.Header',
-        'bba.view.TeamTabPanel',
-		'bba.view.ScorePanel'
+        'bba.view.tab.TeamTabPanel',
+		'bba.view.score.ScorePanel'
     ],
-
+	layout: 'auto',
+	
     initComponent: function() {
         var me = this;
 
         Ext.applyIf(me, {
             items: [
 				{
-					xtype: 'header',
+					xtype: 'bbaheader',
 					html: 'BBA',
 					flex: 1,
 					dock: 'top'
 				},
 				{
 					xtype: 'scorepanel',
-					flex: 1
+					flex: 1,
+					dock: 'top'
 				},
 				{
 					xtype: 'teamtabpanel',
-					border: false,
 					flex: 1
 				}
             ]

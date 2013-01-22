@@ -4,21 +4,19 @@ Ext.Loader.setConfig({
 });
 
 Ext.application({
+    name: 'bba',
     models: [
         'TeamStat',
 		'Standings',
 		'Score'
     ],
     stores: [
-        'TeamStatDataStore',
-		'StandingsDataStore',
-		'ScoreDataStore'
+        'TeamStats',
+		'CurrentStandings',
+		'AllScores'
     ],
-    views: [
-		'Header',
-        'TeamTabPanel',
-		'ScorePanel'
+	controllers: [
+        'BBAController'
     ],
-    autoCreateViewport: true,
-    name: 'bba'
+    autoCreateViewport: true
 });

@@ -1,4 +1,4 @@
-Ext.define('bba.view.MatchupPanel', {
+Ext.define('bba.view.score.MatchupPanel', {
     extend: 'Ext.panel.Panel',
 	alias: 'widget.matchuppanel',
 	game: '',
@@ -9,7 +9,7 @@ Ext.define('bba.view.MatchupPanel', {
 	initComponent: function() {
         var me = this;
 
-		Ext.each(Ext.getStore('ScoreDataStore').first().getAssociatedData().game, function(gameRecord, index, gamesItSelf) {
+		Ext.each(Ext.getStore('AllScores').first().getAssociatedData().game, function(gameRecord, index, gamesItSelf) {
 			if (gameRecord.gameNumber == me.game) {
 				Ext.each(gameRecord.matchup, function(matchupRecord, index, matchupItSelf) {
 					if (matchupRecord.homeTeam == me.matchup) {

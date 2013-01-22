@@ -7,10 +7,70 @@
 			"FantasyPoints" : "12778"
 		},
 		{
+			"Team" : "Dribblers",
+			"Wins" : "2",
+			"Losses" : "40",
+			"FantasyPoints" : "9778"
+		},
+		{
+			"Team" : "Burros",
+			"Wins" : "24",
+			"Losses" : "18",
+			"FantasyPoints" : "12798"
+		},
+		{
+			"Team" : "Sharks",
+			"Wins" : "21",
+			"Losses" : "21",
+			"FantasyPoints" : "12878"
+		},
+		{
+			"Team" : "Sonics",
+			"Wins" : "32",
+			"Losses" : "10",
+			"FantasyPoints" : "13001"
+		},
+		{
+			"Team" : "Animals",
+			"Wins" : "9",
+			"Losses" : "33",
+			"FantasyPoints" : "12523"
+		},
+		{
+			"Team" : "Facemurderers",
+			"Wins" : "42",
+			"Losses" : "0",
+			"FantasyPoints" : "14078"
+		},
+		{
+			"Team" : "Big E",
+			"Wins" : "22",
+			"Losses" : "20",
+			"FantasyPoints" : "12654"
+		},
+		{
+			"Team" : "Peppers",
+			"Wins" : "20",
+			"Losses" : "22",
+			"FantasyPoints" : "12478"
+		},
+		{
 			"Team" : "Goodfellas",
 			"Wins" : "20",
 			"Losses" : "22",
-			"FantasyPoints" : "12777"
+			"FantasyPoints" : "12778"
+		},
+		{
+			"Team" : "Jordans",
+			"Wins" : "17",
+			"Losses" : "25",
+			"FantasyPoints" : "11978"
+		},
+		{
+			"Team" : "Redlegs",
+			"Wins" : "21",
+			"Losses" : "21",
+			"FantasyPoints" : "13077"
 		}
 	]
 }

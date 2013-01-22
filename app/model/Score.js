@@ -62,6 +62,6 @@ Ext.define('bba.model.Matchup', {
             name: 'awayPlayersDone'
         }
     ],
-	belongsTo: 'Game'
+	belongsTo: 'bba.model.Game'
 });
 

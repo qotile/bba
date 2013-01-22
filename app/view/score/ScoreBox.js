@@ -1,24 +1,20 @@
-Ext.define('bba.view.ScoreBox', {
+Ext.define('bba.view.score.ScoreBox', {
     extend: 'Ext.panel.Panel',
 	alias: 'widget.scorebox',
 	game: '',
 	
 	requires : [
-		'bba.view.MatchupPanel'
+		'bba.view.score.MatchupPanel'
 	],
 
-    height: 70,
-    width: 980,
+    height: 78,
+    width: 1000,
     layout: 'column',
 	
 	initComponent: function() {
         var me = this;
-
-        Ext.applyIf(me, {
-			title: 'Game ' + me.game
-		});
 		
-		Ext.each(Ext.getStore('ScoreDataStore').first().getAssociatedData().game, function(gameRecord, index, gamesItSelf) {
+		Ext.each(Ext.getStore('AllScores').first().getAssociatedData().game, function(gameRecord, index, gamesItSelf) {
 			if (gameRecord.gameNumber == me.game) {
 				var flx = 0;
 				var matchups = [];
@@ -31,6 +27,7 @@ Ext.define('bba.view.ScoreBox', {
 				});
 				
 				Ext.applyIf(me, {
+					title: 'Game ' + me.game,
 					items: matchups
 				});
 			}

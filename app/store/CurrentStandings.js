@@ -1,8 +1,8 @@
-Ext.define('bba.store.TeamStatDataStore', {
+Ext.define('bba.store.CurrentStandings', {
     extend: 'Ext.data.Store',
 
     requires: [
-        'bba.model.TeamStat'
+        'bba.model.Standings'
     ],
 
     constructor: function(cfg) {
@@ -10,16 +10,17 @@ Ext.define('bba.store.TeamStatDataStore', {
         cfg = cfg || {};
         me.callParent([Ext.apply({
             autoLoad: true,
-            storeId: 'TeamStatStore',
-            model: 'bba.model.TeamStat',
+            storeId: 'CurrentStandings',
+            model: 'bba.model.Standings',
             proxy: {
                 type: 'ajax',
-                url: 'data/teamstats.json',
+                url: 'data/standings.json',
                 reader: {
                     type: 'json',
                     root: 'data'
                 }
             }
         }, cfg)]);
+		me.sort('WinningPercentage','DESC');
     }
 });

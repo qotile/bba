@@ -1,7 +1,7 @@
 Ext.define('bba.view.grid.TeamStatGridPanel', {
     extend: 'Ext.grid.Panel',
 	alias: 'widget.teamstatgridpanel',
-	store: 'TeamStatDataStore',
+	store: 'TeamStats',
 	viewConfig: {
 
 	},
@@ -26,7 +26,7 @@ Ext.define('bba.view.grid.TeamStatGridPanel', {
 			text: 'Position'
 		},
 		{
-			xtype: 'gridcolumn',
+			xtype: 'numbercolumn',
 			dataIndex: 'Salary',
 			text: 'Salary'
 		},
@@ -36,11 +36,8 @@ Ext.define('bba.view.grid.TeamStatGridPanel', {
 			text: 'GP'
 		},
 		{
-			xtype: 'numbercolumn',
-			dataIndex: 'pointspergame', renderer:function(value,metadata,record) {
-				return Math.round((parseInt(record.get('FantasyPoints'))/
-					parseInt(record.get('GamesPlayed')))*100)/100;
-			},
+			xtype: 'gridcolumn',
+			dataIndex: 'PointsPerGame',
 			text: 'FP/G'
 		}
 	]

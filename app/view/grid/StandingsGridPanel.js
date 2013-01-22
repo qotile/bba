@@ -1,7 +1,7 @@
 Ext.define('bba.view.grid.StandingsGridPanel', {
     extend: 'Ext.grid.Panel',
 	alias: 'widget.standingsgridpanel',
-	store: 'StandingsDataStore',
+	store: 'CurrentStandings',
 	viewConfig: {
 
 	},
@@ -27,11 +27,7 @@ Ext.define('bba.view.grid.StandingsGridPanel', {
 		},
 		{
 			xtype: 'gridcolumn',
-			dataIndex: 'pointspergame', renderer:function(value,metadata,record) {
-				//TODO: make this not so ugly, like with an overloaded round method
-				return Math.round((parseInt(record.get('Wins'))/
-					(parseInt(record.get('Wins'))+parseInt(record.get('Losses'))))*1000)/1000;
-			},
+			dataIndex: 'WinningPercentage',
 			text: 'Pct'
 		},
 		{

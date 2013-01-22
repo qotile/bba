@@ -1,4 +1,4 @@
-Ext.define('bba.view.TeamTabPanel', {
+Ext.define('bba.view.tab.TeamTabPanel', {
     extend: 'Ext.tab.Panel',
 	alias: 'widget.teamtabpanel',
 
@@ -10,6 +10,7 @@ Ext.define('bba.view.TeamTabPanel', {
 	cls: 'team-tab-panel',
     height: 440,
     width: 618,
+	border: false,
 	plain: true,
 	items: [
 		{

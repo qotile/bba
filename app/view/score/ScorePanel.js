@@ -1,27 +1,22 @@
 var navigate = function(panel, direction){
-    // This routine could contain business logic required to manage the navigation steps.
-    // It would call setActiveItem as needed, manage navigation button state, handle any
-    // branching logic that might be required, handle alternate actions like cancellation
-    // or finalization, etc.  A complete wizard implementation could get pretty
-    // sophisticated depending on the complexity required, and should probably be
-    // done as a subclass of CardLayout in a real-world implementation.
     var layout = panel.getLayout();
     layout[direction]();
     Ext.getCmp('move-prev').setDisabled(!layout.getPrev());
     Ext.getCmp('move-next').setDisabled(!layout.getNext());
 };
 
-Ext.define('bba.view.ScorePanel', {
+Ext.define('bba.view.score.ScorePanel', {
     extend: 'Ext.panel.Panel',
 	alias: 'widget.scorepanel',
 	
 	requires: [
-		'bba.view.ScoreBox'
+		'bba.view.score.ScoreBox'
 	],
-
-    height: 70,
-    width: 1000,
+	
+    height: 78,
+    width: 1020,
     layout: 'card',
+	cls: 'scorepanel',
 	
 	lbar: [
 		{ 
@@ -48,15 +43,20 @@ Ext.define('bba.view.ScorePanel', {
     initComponent: function() {
         var me = this;
 
-        Ext.applyIf(me, {
-            items: [
-                {
-					xtype: 'scorebox',
-					game: Ext.getStore('ScoreDataStore').first().get('currGame'),
-					flex: 1
-				}
-            ]
-        });
+		var games = [];
+		var cnt = 0;
+		var scoreStore = Ext.getStore('AllScores').first();
+		Ext.each(scoreStore.getAssociatedData().game, function(gameRecord, index, gamesItSelf) {
+			games[cnt] = {xtype: 'scorebox',
+				itemId: 'game' + gameRecord.gameNumber,
+				game: gameRecord.gameNumber}
+			cnt=cnt+1;
+		});
+        
+		Ext.applyIf(me, {
+			items: games,
+			activeItem: 'game' + scoreStore.get('currGame')
+		});
 
         me.callParent(arguments);
     }

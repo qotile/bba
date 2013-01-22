@@ -1,8 +1,8 @@
-Ext.define('bba.store.StandingsDataStore', {
+Ext.define('bba.store.AllScores', {
     extend: 'Ext.data.Store',
 
     requires: [
-        'bba.model.Standings'
+        'bba.model.Score'
     ],
 
     constructor: function(cfg) {
@@ -10,11 +10,11 @@ Ext.define('bba.store.StandingsDataStore', {
         cfg = cfg || {};
         me.callParent([Ext.apply({
             autoLoad: true,
-            storeId: 'StandingsStore',
-            model: 'bba.model.Standings',
+            storeId: 'AllScores',
+            model: 'bba.model.Score',
             proxy: {
                 type: 'ajax',
-                url: 'data/standings.json',
+                url: 'data/scores.json',
                 reader: {
                     type: 'json',
                     root: 'data'

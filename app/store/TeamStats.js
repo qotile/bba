@@ -1,8 +1,8 @@
-Ext.define('bba.store.ScoreDataStore', {
+Ext.define('bba.store.TeamStats', {
     extend: 'Ext.data.Store',
 
     requires: [
-        'bba.model.Score'
+        'bba.model.TeamStat'
     ],
 
     constructor: function(cfg) {
@@ -10,16 +10,17 @@ Ext.define('bba.store.ScoreDataStore', {
         cfg = cfg || {};
         me.callParent([Ext.apply({
             autoLoad: true,
-            storeId: 'ScoreStore',
-            model: 'bba.model.Score',
+            storeId: 'TeamStats',
+            model: 'bba.model.TeamStat',
             proxy: {
                 type: 'ajax',
-                url: 'data/scores.json',
+                url: 'data/teamstats.json',
                 reader: {
                     type: 'json',
                     root: 'data'
                 }
             }
         }, cfg)]);
+		me.sort('PointsPerGame','DESC');
     }
 });

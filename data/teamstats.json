@@ -4,17 +4,121 @@
 			"Player" : "Larry Bird",
 			"NBATeam" : "Boston",
 			"Position" : "F",
-			"Salary" : "3888888",
-			"GamesPlayed" : "20", 
-			"FantasyPoints" : "778"
+			"Salary" : "3888865",
+			"GamesPlayed" : "42", 
+			"FantasyPoints" : "1532"
 		},
 		{
 			"Player" : "Oscar Robertson",
 			"NBATeam" : "Milwaukee",
 			"Position" : "G-F",
 			"Salary" : "3888888",
-			"GamesPlayed" : "20", 
-			"FantasyPoints" : "778"
+			"GamesPlayed" : "43", 
+			"FantasyPoints" : "1604"
+		},
+		{
+			"Player" : "Michael Jordan",
+			"NBATeam" : "Chicago",
+			"Position" : "G",
+			"Salary" : "3998765",
+			"GamesPlayed" : "41", 
+			"FantasyPoints" : "1512"
+		},
+		{
+			"Player" : "Patrick Ewing",
+			"NBATeam" : "New York",
+			"Position" : "C",
+			"Salary" : "3698543",
+			"GamesPlayed" : "34", 
+			"FantasyPoints" : "1360"
+		},
+		{
+			"Player" : "David Robinson",
+			"NBATeam" : "San Antonio",
+			"Position" : "C",
+			"Salary" : "3768890",
+			"GamesPlayed" : "37", 
+			"FantasyPoints" : "1405"
+		},
+		{
+			"Player" : "Reggie Miller",
+			"NBATeam" : "Indiana",
+			"Position" : "G",
+			"Salary" : "2876222",
+			"GamesPlayed" : "44", 
+			"FantasyPoints" : "1442"
+		},
+		{
+			"Player" : "Chris Mullin",
+			"NBATeam" : "Golden State",
+			"Position" : "F",
+			"Salary" : "3200203",
+			"GamesPlayed" : "23", 
+			"FantasyPoints" : "645"
+		},
+		{
+			"Player" : "Magic Johnson",
+			"NBATeam" : "LAL",
+			"Position" : "G",
+			"Salary" : "3888000",
+			"GamesPlayed" : "32", 
+			"FantasyPoints" : "1344"
+		},
+		{
+			"Player" : "Hakeem Olajuwon",
+			"NBATeam" : "Houston",
+			"Position" : "C",
+			"Salary" : "3934443",
+			"GamesPlayed" : "44", 
+			"FantasyPoints" : "1578"
+		},
+		{
+			"Player" : "Chris Douglas-McRoberts",
+			"NBATeam" : "Milwaukee",
+			"Position" : "G",
+			"Salary" : "1222022",
+			"GamesPlayed" : "22", 
+			"FantasyPoints" : "278"
+		},
+		{
+			"Player" : "Javale McGee",
+			"NBATeam" : "Denver",
+			"Position" : "F-C",
+			"Salary" : "2300222",
+			"GamesPlayed" : "37", 
+			"FantasyPoints" : "756"
+		},
+		{
+			"Player" : "Metta World Peace",
+			"NBATeam" : "LAL",
+			"Position" : "F",
+			"Salary" : "2123443",
+			"GamesPlayed" : "42", 
+			"FantasyPoints" : "854"
+		},
+		{
+			"Player" : "World B. Free",
+			"NBATeam" : "Cleveland",
+			"Position" : "G",
+			"Salary" : "2546788",
+			"GamesPlayed" : "39", 
+			"FantasyPoints" : "856"
+		},
+		{
+			"Player" : "Dennis Rodman",
+			"NBATeam" : "Chicago",
+			"Position" : "F",
+			"Salary" : "1788999",
+			"GamesPlayed" : "21", 
+			"FantasyPoints" : "444"
+		},
+		{
+			"Player" : "Jimmer Fredette",
+			"NBATeam" : "Sacramento",
+			"Position" : "G",
+			"Salary" : "1444400",
+			"GamesPlayed" : "43", 
+			"FantasyPoints" : "634"
 		}
 	]
 }
